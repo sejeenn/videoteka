@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>
+    {% block title %}
+      Видеотека
+    {% endblock %}
+  </title>
+
+  {% load static %}
+  <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+
+  <div class="d-flex flex-column flex-md-row align-items-center pb-3 mb-4 border-bottom">
+      <a href="/" class="d-flex align-items-center link-body-emphasis text-decoration-none">
+        <svg width="40" height="32" class="me-2" viewBox="0 0 118 94" role="img">qwerty</svg>
+        <span class="fs-4">Главная страница</span>
+      </a>
+
+    </div>
+
+</head>
+<body>
+<div class="container">
+{% block body %}
+
+{% endblock %}
+</div>
+</body>
+</html>

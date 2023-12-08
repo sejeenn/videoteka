@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+{% block title %}
+  Список фильмов
+{% endblock %}
+
+
+{% block body %}
+
+<div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h3 class="display-4 fw-normal">Список фильмов
+      </h3>
+<div>
+  {% if list_films %}
+
+      {% for film in list_films %}
+        {{ film.title }}
+      {% endfor %}
+  {% else %}
+        <h3>Нет фильмов</h3>
+    {% endif %}
+</div>
+
+{% endblock %}
+
